@@ -1,0 +1,4 @@
+vendor
+.DS_Store
+composer.phar
+ev_charging_php/composer.lock

@@ -1,0 +1,54 @@
+{% extends 'main.twig' %}
+{% block content %}
+<div class="container">
+    <h1 class="my-4">Confirm Your Booking</h1>
+
+
+    <div class="booking-card card">
+        <div class="card-body">
+            <h5 class="card-title">Booking Details</h5>
+
+            <form>
+                <!-- Date and Time -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="time" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="time" required>
+                    </div>
+                </div>
+
+                <!-- Slot Details -->
+                <div class="mb-3">
+                    <label for="slot-details" class="form-label">Slot Details</label>
+                    <textarea id="slot-details" class="form-control" rows="3" required></textarea>
+                </div>
+
+                <!-- Location -->
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Enter location" required>
+                </div>
+
+                <!-- Price and Duration -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="text" class="form-control" id="price" placeholder="Enter price" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="duration" class="form-label">Duration</label>
+                        <input type="text" class="form-control" id="duration" placeholder="Enter duration" required>
+                    </div>
+                </div>
+
+                <!-- Book Now Button -->
+                <button type="submit" class="btn btn-success">Book Now</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

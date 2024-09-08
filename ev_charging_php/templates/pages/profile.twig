@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charge-EZ - User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .profile-card {
+            margin-top: 20px;
+        }
+        .booking-card {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">User Profile</h1>
+
+        <!-- Personal Information -->
+        <div class="profile-card card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/120" alt="User Avatar" class="profile-avatar me-3">
+                    <div>
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text"><strong>Email:</strong> john.doe@example.com</p>
+                        <!-- Add more personal info if needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking History -->
+        <div class="booking-card card">
+            <div class="card-body">
+                <h5 class="card-title">Booking History</h5>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h6 class="mb-1">Charging Station A</h6>
+                        <p class="mb-1"><strong>Date:</strong> 2024-08-25</p>
+                        <p class="mb-1"><strong>Time:</strong> 15:00</p>
+                        <p class="mb-1"><strong>Price:</strong> $25.00</p>
+                        <p class="mb-1"><strong>Status:</strong> Completed</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h6 class="mb-1">Charging Station B</h6>
+                        <p class="mb-1"><strong>Date:</strong> 2024-07-20</p>
+                        <p class="mb-1"><strong>Time:</strong> 10:00</p>
+                        <p class="mb-1"><strong>Price:</strong> $30.00</p>
+                        <p class="mb-1"><strong>Status:</strong> Completed</p>
+                    </li>
+                    <!-- Add more bookings as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Feedback and Logout Buttons -->
+        <div class="mt-4">
+            <a href="feedback.html" class="btn btn-success me-2">Give Feedback</a>
+            <a href="logout.html" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
